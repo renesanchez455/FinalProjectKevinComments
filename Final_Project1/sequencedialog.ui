@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sequencedialog</class>
+ <widget class="QDialog" name="Sequencedialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>504</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>504</width>
+    <height>386</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>504</width>
+    <height>386</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sequencedialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(252, 236, 12);</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>320</y>
+     <width>239</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QPushButton" name="addButton">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(60, 4, 76);
+background-color: rgb(234, 234, 234);</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelButton">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(60, 4, 76);
+background-color: rgb(234, 234, 234);</string>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-4</x>
+     <y>-4</y>
+     <width>511</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/Images/Images/ublogo.png);
+background-color: rgb(60, 4, 76);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>511</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 4, 76);</string>
+   </property>
+   <property name="text">
+    <string>                               Sequence Management System - Sequence Information</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>258</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="StudentIDLabel">
+        <property name="text">
+         <string>Syllabus ID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="syllabusIdEdit">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="ProgramLabel">
+        <property name="text">
+         <string>Program</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="ProgramComboBox">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AINT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>BINT</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="YearLabel">
+        <property name="text">
+         <string>Program Year</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>48</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="progYearComboBox">
+        <property name="styleSheet">
+         <string>background-color: rgb(255, 255, 255);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2018</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="SemesterLabel">
+        <property name="text">
+         <string>Semester</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="SemesterComboBox">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="CourseLabel">
+        <property name="text">
+         <string>Course</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="CourseComboBox">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS1134</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS1131</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>MATH1151</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>MATH1201</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ENGL1014</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMSP1171</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS1232</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS1211</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PHIL1014</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>MATH1302</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ENG1025</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PHYS1015</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PHYS1015L</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS2131</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS2111</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS2151</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS2242</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ENGL1035</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>MATH2201</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS2212</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS2232</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>MGMT1014</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PSYC1014</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HIST1014</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS1192</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CMPS2992</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SOCL1014</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SPAN1025</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ECON1014</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="resultLabel">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>160</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

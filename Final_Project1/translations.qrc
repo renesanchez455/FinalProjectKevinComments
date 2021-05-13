@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>trans_es.qm</file>
+    </qresource>
+</RCC>

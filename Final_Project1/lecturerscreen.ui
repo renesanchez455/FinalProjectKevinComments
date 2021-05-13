@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Lecturerscreen</class>
+ <widget class="QDialog" name="Lecturerscreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>617</width>
+    <height>344</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>617</width>
+    <height>344</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>617</width>
+    <height>344</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Lecturerscreen</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(252, 236, 12);</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-14</x>
+     <y>-4</y>
+     <width>631</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/Images/Images/ublogo.png);
+background-color: rgb(60, 4, 76);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>160</y>
+     <width>171</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="searchstudentButton">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(60, 4, 76);
+background-color: rgb(234, 234, 234);</string>
+      </property>
+      <property name="text">
+       <string>Search Student</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="generatereportButton">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(60, 4, 76);
+background-color: rgb(234, 234, 234);</string>
+      </property>
+      <property name="text">
+       <string>Generate Report</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>60</y>
+     <width>631</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 4, 76);</string>
+   </property>
+   <property name="text">
+    <string>                                          Sequence Management System - Lecturer Menu</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logOutButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>110</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(60, 4, 76);
+background-color: rgb(234, 234, 234);</string>
+   </property>
+   <property name="text">
+    <string>Log Out</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
